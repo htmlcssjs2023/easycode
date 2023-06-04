@@ -1,0 +1,13 @@
+/*
+* Common CSS
+*/
+img{
+    max-width: 100%;
+}
+
+/*======================
+Header area style
+========================*/
+#header_area{
+    padding: 20px 0;
+}
