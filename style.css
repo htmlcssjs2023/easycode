@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Easy Code
+Theme URI: https://thezoomit.com/
+Author: Md Abdul Halim
+Author URI: #
+Description: Easy Code is a blank canvas for your ideas and it makes the clear sense your of project development. With excellent pattern, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching . Design will let your work shine.  See how Easy Theme elevates your portfolio, business website, or personal blog.
+Requires at least: 5.3
+Tested up to: 6.2
+Requires PHP: 5.6
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: abdulhalim
+Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+EasyCode WordPress Theme, (C) 2023 WordPress.org
+*/
+
+body{
+    background-color: orange;
+}
+
