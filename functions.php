@@ -37,7 +37,10 @@
 
  
 
- // Theme Logo Customize Code
+ // Theme function customization..
+// function abc($wp_customize){}
+// add_action( 'themecustomizer', 'abc' );
+
 
 function easycode_customizar_register($wp_customize){
       $wp_customize->add_section('easycode_header_area', [
@@ -56,6 +59,48 @@ function easycode_customizar_register($wp_customize){
          'section' => 'easycode_header_area',
       ]));
 
+      
+
+      // ================ Menu Position ============== 
+      $wp_customize->add_section('halim_menu_option', [
+         'title' => __('Menu Option', 'mdabdulhalim'),
+         'description' => 'This is created by Abdul Halim'
+      ]);
+
+      $wp_customize->add_setting('halim_menu_position',[
+         'default' => 'right_menu'
+      ]);
+
+      $wp_customize->add_control('halim_menu_position',[
+            'label' => 'Menu Position',
+            'description' => 'You can change your menu position',
+            'setting' => 'halim_menu_position',
+            'section' => 'halim_menu_option',
+            'type' => 'radio',
+            'choices' => [
+               'left_menu' => 'Left Menu',
+               'right_menu' => 'Right Menu',
+               'center_menu' => 'Center Menu'
+            ]
+      ]);
+
+      // Menu Positioning
+    
 }
 
 add_action('customize_register', 'easycode_customizar_register');
+
+
+
+
+
+
+// Google Fonts Enqueue
+function easycode_add_google_fonts(){
+wp_enqueue_style('easycode_google_fonts', 'https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Oswald&display=swap',
+false);
+}
+
+add_action('wp_enqueue_scripts', 'easycode_add_google_fonts');
+// Menu Register
+register_nav_menu( 'main_menu', __('Main Menu', 'mdabdulhalim') );

@@ -1,0 +1,28 @@
+1. How to install wordpress?
+2. How to create new theme?
+3. How to description and authentication of theme
+4. How to call css, html, js, jQeury, file in your index.php file
+5. Setup project as wp theme development
+
+
+==> 05
+
+--> How to add google font?
+--> How to add navigation menu?
+--> Import dummy content on wordpress?
+
+// Menu Register
+register_nav_menu( 'main_menu', __('Main Menu', 'mdabdulhalim') );
+
+Appearance > Menus
+
+--> How to import wordpress default tools for testing purpose?
+
+// Tools > Import > Install Wordpress
+// Run Importer
+// Upload themeunittestdata.wordpress.xml
+
+
+download file following link
+https://codex.wordpress.org/Theme_Uni...
+https://github.com/WPTT/theme-test-data
