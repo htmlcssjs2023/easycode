@@ -43,6 +43,8 @@
 
 
 function easycode_customizar_register($wp_customize){
+
+   //=======================  Header area =============================
       $wp_customize->add_section('easycode_header_area', [
       'title' =>__('Header Area', 'mdabdulhalim'),
       'description' => 'If you interested to update your header area, you can do it here.'
@@ -59,7 +61,23 @@ function easycode_customizar_register($wp_customize){
          'section' => 'easycode_header_area',
       ]));
 
-      
+         //======================= Footer area =============================
+         $wp_customize->add_section('easycode_footer_option', [
+         'title' =>__('Footer Option', 'mdabdulhalim'),
+         'description' => 'If you interested to update your footer area, you can do it from here.'
+         ]);
+
+         $wp_customize->add_setting('easycode_copyright_option',[
+         'default' => '&copy; Copyright 2023 || EasyCode'
+         ]);
+
+         $wp_customize-> add_control('easycode_copyright_option', [
+         'label' => 'Copyright Text',
+         'description' => 'You can change your copyright option',
+         'setting' => 'easycode_copyright_option',
+         'section' => 'easycode_footer_option',
+         ]);
+
 
       // ================ Menu Position ============== 
       $wp_customize->add_section('halim_menu_option', [
@@ -107,15 +125,12 @@ register_nav_menu( 'main_menu', __('Main Menu', 'mdabdulhalim') );
 
 
 // Walker Menu Properties
-function ali_nav_description( $item_output, $item, $args){
-if( !empty ($item->description)){
-$item_output = str_replace($args->link_after . '</a>', '<span class="walker_nav">' . $item->description . '</span>' .
-$args->link_after . '</a>', $item_output);
-}
-return $item_output;
-}
-add_filter('walker_nav_menu_start_el', 'ali_nav_description', 10, 3);
+// function ali_nav_description( $item_output, $item, $args){
+// if( !empty ($item->description)){
+// $item_output = str_replace($args->link_after . '</a>', '<span class="walker_nav">' . $item->description . '</span>' .
+// $args->link_after . '</a>', $item_output);
+// }
+// return $item_output;
+// }
 
-
-
-
+// add_filter('walker_nav_menu_start_el', 'ali_nav_description', 10, 3);

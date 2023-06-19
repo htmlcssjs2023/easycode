@@ -167,6 +167,19 @@ img {
    text-align: center;
 }
 
-
+/* ======================
+footer area 
+========================= */
+.copyright_footer_area{
+  background-color: #262626;
+  color: wheat;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+}
+.copyright_footer_area p{
+ 
+  margin: 0;
+}
 
 
