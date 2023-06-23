@@ -148,6 +148,8 @@ img {
 #body_area .blog_area {
   width: 100%;
   margin-bottom: 15px;
+  box-shadow: 0px 1px 5px #262626;
+  padding: 1rem;
 }
 #body_area .post_thumb {
   overflow: hidden;
@@ -259,7 +261,51 @@ footer area
  
   margin: 0;
 }
+/* ======================
+Sidebar Area 
+========================= */
+#side_bar{
+   box-shadow: 0px 1px 7px #262626;
+   overflow: auto;
+}
+ .child_sidebar h2{
+  font-family:'Open Sans';
+  font-size: 30px;
+  font-weight: 400;
+  color: deeppink;
+  margin: 0;
+  padding: 10px;
 
+}
+.child_sidebar input[type="search"],button[type="submit"] {
+    font-size: 16px;
+    color: deeppink;
+    border: none;
+    box-shadow: 0px 1px 7px #262626;
+    border-radius: 5px;
+    text-align: center;
+}
+.child_sidebar input[type="search"]:focus{
+  outline: none;
+}
+.child_sidebar ul li a{
+  text-decoration: none;
+  font-size: 16px;
+}
+.child_sidebar ul li a:hover{
+  color: deeppink;
+}
+.child_sidebar p a {
+  background-color: #ddd;
+  margin: 1px;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.child_sidebar p a:hover{
+  color: deeppink;
+}
 /* ======================
 pagination nav 
 ========================= */
@@ -286,5 +332,13 @@ pagination nav
   border-radius: 5px;
 }
 
-
+#footer {
+  background: #292929;
+  padding: 40px 0 20px;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+#footer .child_sidebar ul li a {
+  color: #fff;
+}
 
