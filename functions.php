@@ -11,3 +11,7 @@ include_once('inc/theme_function.php');
 
 // Call Menu Register 
 include_once('inc/menu_register.php');
+
+// Register widgets
+
+include_once('inc/widgets_register.php');

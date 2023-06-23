@@ -260,4 +260,31 @@ footer area
   margin: 0;
 }
 
+/* ======================
+pagination nav 
+========================= */
+#page_nav .pages{
+  background: orange;
+  padding: 3px;
+}
+#page_nav .pages span{
+  padding: 2px;
+}
+#page_nav .wp_pagenav a{
+  color: black;
+  background: orange;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#page_nav .wp_pagenav span.current{
+  
+  background: black;
+  color:#fff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
 

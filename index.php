@@ -26,10 +26,16 @@
                             _e('Not Post Here');
                         endif;
                     ?>
-                   
+                   <div id="page_nav">
+                        <?php if('halim_pagenav'){ halim_pagenav(); } else{ ?>
+                                <?php next_post_link(); ?>
+                                <?php previous_post_link(); ?>
+
+                            <?php } ?>
+                   </div>
                 </div>
                 <div class="col-md-3">
-                   <h2>Archive Area</h2>
+                 <?php get_sidebar(); ?>
                 </div>
             </div>
         </div>
